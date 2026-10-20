@@ -1,0 +1,52 @@
+Oct 20 20:39:29.049 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 20 20:39:29.049 HYPERVISOR: Started on IP = localhost, TCP port = 65089.
+Oct 20 20:39:29.545 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 20:39:29.547 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips 
+Oct 20 20:39:29.547 GENERAL: working_dir=D:\IS-IS\project-files\dynamips
+Oct 20 20:39:29.548 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips\49c27c42-62eb-4e22-9c66-443f2d38e9e6 
+Oct 20 20:39:29.548 GENERAL: working_dir=D:\IS-IS\project-files\dynamips\49c27c42-62eb-4e22-9c66-443f2d38e9e6
+Oct 20 20:39:29.548 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Oct 20 20:39:29.552 VM: VM R2 created.
+Oct 20 20:39:29.553 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Oct 20 20:39:29.553 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Oct 20 20:39:29.553 HYPERVISOR: exec_cmd: c3600 set_chassis R2 3660 
+Oct 20 20:39:29.555 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:39:29.555 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:39:29.555 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6076e0b4 
+Oct 20 20:39:29.556 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Oct 20 20:39:29.557 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Oct 20 20:39:29.557 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Oct 20 20:39:29.623 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:00.313 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 20 20:40:00.316 HYPERVISOR: exec_cmd: vm set_ghost_file R2 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:40:00.316 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:40:00.318 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Oct 20 20:40:00.320 HYPERVISOR: exec_cmd: vm start R2 
+Oct 20 20:40:30.664 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 20 20:43:19.930 HYPERVISOR: exec_cmd: nio create_udp udp-62e1a739-eded-4e79-b499-b6587742552f 10010 127.0.0.1 10011 
+Oct 20 20:43:20.238 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-62e1a739-eded-4e79-b499-b6587742552f 
+Oct 20 20:43:20.240 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:43:20.241 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 0 0 
+Oct 20 20:43:24.449 HYPERVISOR: exec_cmd: nio create_udp udp-08f5e3ad-4502-416e-b4a8-dafb6aeeda13 10014 127.0.0.1 10015 
+Oct 20 20:43:24.469 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-08f5e3ad-4502-416e-b4a8-dafb6aeeda13 
+Oct 20 20:43:24.469 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:43:24.469 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 0 1 
+Oct 20 20:44:16.845 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:44:16.845 HYPERVISOR: exec_cmd: vm stop R2 
+Oct 20 20:44:17.004 VM: VM R2 shutdown.
+Oct 20 20:44:17.004 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 20 20:44:23.866 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:44:23.866 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Oct 20 20:44:23.938 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:44:33.753 HYPERVISOR: exec_cmd: nio create_udp udp-e1941348-0f42-4390-8731-13c3dc630740 10048 127.0.0.1 10049 
+Oct 20 20:44:33.753 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-e1941348-0f42-4390-8731-13c3dc630740 
+Oct 20 20:44:33.753 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:44:58.229 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 20 20:44:58.229 HYPERVISOR: exec_cmd: vm set_ghost_file R2 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:44:58.229 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 20 20:44:58.229 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Oct 20 20:44:58.235 HYPERVISOR: exec_cmd: vm start R2 
+Oct 20 22:05:29.452 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 20 22:18:11.317 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 20 22:18:11.319 HYPERVISOR: exec_cmd: vm set_ghost_file R2 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 22:18:11.321 HYPERVISOR: exec_cmd: vm get_status R2 

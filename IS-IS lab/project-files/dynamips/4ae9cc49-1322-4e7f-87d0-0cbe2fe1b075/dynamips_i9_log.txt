@@ -1,0 +1,49 @@
+Oct 20 20:39:56.257 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 20 20:39:56.257 HYPERVISOR: Started on IP = localhost, TCP port = 63609.
+Oct 20 20:39:56.730 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 20:39:56.730 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips 
+Oct 20 20:39:56.730 GENERAL: working_dir=D:\IS-IS\project-files\dynamips
+Oct 20 20:39:56.730 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips\748f2614-374a-41de-8b2f-1d81ca01f15e 
+Oct 20 20:39:56.730 GENERAL: working_dir=D:\IS-IS\project-files\dynamips\748f2614-374a-41de-8b2f-1d81ca01f15e
+Oct 20 20:39:56.730 HYPERVISOR: exec_cmd: vm create R9 9 c3600 
+Oct 20 20:39:56.730 VM: VM R9 created.
+Oct 20 20:39:56.750 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5008 
+Oct 20 20:39:56.750 HYPERVISOR: exec_cmd: c3600 get_mac_addr R9 
+Oct 20 20:39:56.750 HYPERVISOR: exec_cmd: c3600 set_chassis R9 3660 
+Oct 20 20:39:56.753 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:39:56.755 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 20:39:56.755 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x6076e0b4 
+Oct 20 20:39:56.756 HYPERVISOR: exec_cmd: vm set_exec_area R9 64 
+Oct 20 20:39:56.756 HYPERVISOR: exec_cmd: vm set_ram R9 192 
+Oct 20 20:39:56.758 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+Oct 20 20:39:56.860 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:01.030 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Oct 20 20:40:01.030 HYPERVISOR: exec_cmd: vm set_ghost_file R9 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:40:01.030 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 20:40:01.032 HYPERVISOR: exec_cmd: vm set_config R9 configs\i9_startup-config.cfg 
+Oct 20 20:40:01.032 HYPERVISOR: exec_cmd: vm start R9 
+Oct 20 20:40:21.766 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:31.385 HYPERVISOR: exec_cmd: vm extract_config R9 
+Oct 20 20:40:37.487 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:43:51.177 HYPERVISOR: exec_cmd: nio create_udp udp-78a532c4-79f5-4509-ada4-f6afb4cb06be 10044 127.0.0.1 10045 
+Oct 20 20:43:52.045 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 0 udp-78a532c4-79f5-4509-ada4-f6afb4cb06be 
+Oct 20 20:43:52.045 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 20:43:52.045 HYPERVISOR: exec_cmd: vm slot_enable_nio R9 0 0 
+Oct 20 20:44:58.588 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Oct 20 20:44:58.588 HYPERVISOR: exec_cmd: vm set_ghost_file R9 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:44:58.588 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 21:06:25.276 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 21:06:30.965 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 21:07:24.238 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 21:07:30.807 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 21:08:00.199 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 22:03:02.604 HYPERVISOR: exec_cmd: vm extract_config R9 
+Oct 20 22:09:38.147 HYPERVISOR: exec_cmd: nio create_udp udp-2b84d656-7417-4afc-a5b0-1a437037843a 10068 127.0.0.1 10069 
+Oct 20 22:09:38.166 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 1 udp-2b84d656-7417-4afc-a5b0-1a437037843a 
+Oct 20 22:09:38.166 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 22:09:38.166 HYPERVISOR: exec_cmd: vm slot_enable_nio R9 0 1 
+Oct 20 22:18:11.351 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Oct 20 22:18:11.353 HYPERVISOR: exec_cmd: vm set_ghost_file R9 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 22:18:11.355 HYPERVISOR: exec_cmd: vm get_status R9 
+Oct 20 22:21:02.892 HYPERVISOR: exec_cmd: vm extract_config R9 
+Oct 20 22:27:33.004 HYPERVISOR: exec_cmd: vm extract_config R9 

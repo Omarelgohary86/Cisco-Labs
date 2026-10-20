@@ -1,0 +1,57 @@
+Oct 20 20:39:53.832 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 20 20:39:53.832 HYPERVISOR: Started on IP = localhost, TCP port = 63597.
+Oct 20 20:39:54.317 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 20:39:54.317 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips 
+Oct 20 20:39:54.322 GENERAL: working_dir=D:\IS-IS\project-files\dynamips
+Oct 20 20:39:54.322 HYPERVISOR: exec_cmd: hypervisor working_dir D:\IS-IS\project-files\dynamips\404316d7-f121-4dce-869c-a745eef09bdc 
+Oct 20 20:39:54.322 GENERAL: working_dir=D:\IS-IS\project-files\dynamips\404316d7-f121-4dce-869c-a745eef09bdc
+Oct 20 20:39:54.322 HYPERVISOR: exec_cmd: vm create R7 7 c3600 
+Oct 20 20:39:54.340 VM: VM R7 created.
+Oct 20 20:39:54.340 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5006 
+Oct 20 20:39:54.340 HYPERVISOR: exec_cmd: c3600 get_mac_addr R7 
+Oct 20 20:39:54.340 HYPERVISOR: exec_cmd: c3600 set_chassis R7 3660 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x6076e0b4 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm set_exec_area R7 64 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm set_ram R7 192 
+Oct 20 20:39:54.350 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Oct 20 20:39:54.445 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:01.024 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Oct 20 20:40:01.026 HYPERVISOR: exec_cmd: vm set_ghost_file R7 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:40:01.026 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:40:01.028 HYPERVISOR: exec_cmd: vm set_config R7 configs\i7_startup-config.cfg 
+Oct 20 20:40:01.028 HYPERVISOR: exec_cmd: vm start R7 
+Oct 20 20:40:19.893 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:26.461 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:40:31.385 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 20 20:43:41.034 HYPERVISOR: exec_cmd: nio create_udp udp-b368b141-7c6d-4eb3-8376-3b95ad6c4423 10032 127.0.0.1 10033 
+Oct 20 20:43:41.384 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-b368b141-7c6d-4eb3-8376-3b95ad6c4423 
+Oct 20 20:43:41.384 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:43:41.384 HYPERVISOR: exec_cmd: vm slot_enable_nio R7 0 0 
+Oct 20 20:43:46.109 HYPERVISOR: exec_cmd: nio create_udp udp-d8a7158c-1995-40f1-b06f-96c385988501 10036 127.0.0.1 10037 
+Oct 20 20:43:46.128 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-d8a7158c-1995-40f1-b06f-96c385988501 
+Oct 20 20:43:46.129 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:43:46.129 HYPERVISOR: exec_cmd: vm slot_enable_nio R7 0 1 
+Oct 20 20:44:43.421 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:44:43.421 HYPERVISOR: exec_cmd: vm stop R7 
+Oct 20 20:44:43.596 VM: VM R7 shutdown.
+Oct 20 20:44:43.596 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 20 20:44:49.388 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:44:49.388 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+Oct 20 20:44:54.590 HYPERVISOR: exec_cmd: nio create_udp udp-28cafde5-5619-4880-bc8a-caac273c0601 10056 127.0.0.1 10057 
+Oct 20 20:44:54.599 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 1 0 udp-28cafde5-5619-4880-bc8a-caac273c0601 
+Oct 20 20:44:54.599 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:44:58.255 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Oct 20 20:44:58.255 HYPERVISOR: exec_cmd: vm set_ghost_file R7 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 20:44:58.255 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 20 20:44:58.258 HYPERVISOR: exec_cmd: vm set_config R7 configs\i7_startup-config.cfg 
+Oct 20 20:44:58.258 HYPERVISOR: exec_cmd: vm start R7 
+Oct 20 20:46:37.115 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:46:41.083 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 20:50:36.511 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 21:05:44.842 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/omare/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Oct 20 22:03:59.698 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 20 22:18:11.343 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Oct 20 22:18:11.343 HYPERVISOR: exec_cmd: vm set_ghost_file R7 D:\IS-IS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Oct 20 22:18:11.345 HYPERVISOR: exec_cmd: vm get_status R7 
