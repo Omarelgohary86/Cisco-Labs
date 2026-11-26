@@ -1,0 +1,64 @@
+###R1
+router bgp 12
+neighbor 192.168.101.2 remote-as 100
+neighbor 192.168.13.2 remote-as 1000
+exit
+
+---------------------------------------------
+###R2
+router bgp 12
+neighbor 192.168.102.1 remote-as 100
+neighbor 192.168.24.1 remote-as 1000
+exit
+
+
+---------------------------------------------
+###R3
+router bgp 1000
+neighbor 192.168.13.1 remote-as 12
+exit
+
+---------------------------------------------
+###R4
+router bgp 1000
+neighbor 192.168.24.2 remote-as 12
+neighbor 192.168.47.2 remote-as 2000
+neighbor 192.168.48.2 remote-as 2000
+exit
+
+---------------------------------------------
+###R7
+router bgp 2000
+neighbor 192.168.47.1 remote-as 1000
+exit
+
+---------------------------------------------
+###R8
+router bgp 2000
+neighbor 192.168.48.1 remote-as 1000
+exit
+---------------------------------------------
+###R9
+router bgp 2000
+neighbor 192.168.119.2 remote-as 110
+exit 
+
+---------------------------------------------
+###R10
+router bgp 100
+neighbor 192.168.101.1 remote-as 12
+neighbor 192.168.102.2 remote-as 12
+network 150.1.1.10 mask 255.255.255.255
+exit
+ 
+---------------------------------------------
+###R11
+router bgp 110
+neighbor 192.168.119.1 remote-as 2000
+network 150.1.1.11 mask 255.255.255.255
+exit 
+
+
+
+
+

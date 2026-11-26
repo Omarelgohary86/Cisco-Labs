@@ -1,0 +1,101 @@
+###R1
+router bgp 12
+neighbor 10.10.10.2 remote-as 12
+neighbor 10.10.10.2 update-source loop 10
+neighbor 10.10.10.2 next-hop-self 
+neighbor 10.10.10.2 passw 123
+network 150.1.1.1 mask 255.255.255.255
+exit
+
+---------------------------------------------
+###R2
+router bgp 12
+neighbor 10.10.10.1 remote-as 12
+neighbor 10.10.10.1 update-source loop 10
+neighbor 10.10.10.1 next-hop-self 
+neighbor 10.10.10.1 passw 123
+network 150.1.1.2 mask 255.255.255.255
+exit
+
+
+---------------------------------------------
+###R3
+router bgp 1000
+neighbor TEST peer-group
+neighbor TEST remote-as 1000
+neighbor TEST update-source loop 10
+neighbor TEST next-hop-self all
+neighbor TEST passw 123
+neighbor 10.10.10.4 peer-group TEST
+neighbor 10.10.10.5 peer-group TEST
+neighbor TEST route-reflector-client
+network 150.1.1.3 mask 255.255.255.255
+redistribute ospf 1
+bgp redistribute-internal
+exit
+
+ip route 10.10.10.4 255.255.255.255 192.168.34.1
+ip route 10.10.10.5 255.255.255.255 192.168.35.1
+---------------------------------------------
+###R4
+router bgp 1000
+neighbor 10.10.10.3 remote-as 1000
+neighbor 10.10.10.3 update-source loop 10
+neighbor 10.10.10.3 next-hop-self 
+neighbor 10.10.10.3 passw 123
+network 150.1.1.4 mask 255.255.255.255
+exit
+
+ip route 192.168.35.0 255.255.255.252 192.168.34.2
+ip route 10.10.10.3 255.255.255.255 192.168.34.2
+ip route 10.10.10.5 255.255.255.255 192.168.34.2
+---------------------------------------------
+###R5
+router bgp 1000
+neighbor 10.10.10.3 remote-as 1000
+neighbor 10.10.10.3 update-source loop 10
+neighbor 10.10.10.3 next-hop-self 
+neighbor 10.10.10.3 passw 123
+network 150.1.1.5 mask 255.255.255.255
+exit
+
+ip route 192.168.34.0 255.255.255.252 192.168.35.2
+ip route 10.10.10.3 255.255.255.255 192.168.35.2
+ip route 10.10.10.4 255.255.255.255 192.168.35.2
+---------------------------------------------
+###R7
+router bgp 2000
+neighbor 10.10.10.9 remote-as 2000
+neighbor 10.10.10.9 update-source loop 10
+neighbor 10.10.10.9 next-hop-self 
+neighbor 10.10.10.9 passw 123
+network 150.1.1.7 mask 255.255.255.255
+exit
+
+---------------------------------------------
+###R8
+router bgp 2000
+neighbor 10.10.10.9 remote-as 2000
+neighbor 10.10.10.9 update-source loop 10
+neighbor 10.10.10.9 next-hop-self 
+neighbor 10.10.10.9 passw 123
+network 150.1.1.8 mask 255.255.255.255
+exit
+
+---------------------------------------------
+###R9
+router bgp 2000
+neighbor TEST2 peer-group
+neighbor TEST2 remote-as 2000
+neighbor TEST2 update-source loop 10
+neighbor TEST2 next-hop-self 
+neighbor TEST2 passw 123
+neighbor 10.10.10.7 peer-group TEST2
+neighbor 10.10.10.8 peer-group TEST2
+neighbor TEST2 route-reflector-client
+network 150.1.1.9 mask 255.255.255.255
+exit
+
+
+
+
